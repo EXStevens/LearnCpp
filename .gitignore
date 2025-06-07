@@ -1,2 +1,4 @@
 CppPrimerPlus/**/*.exe
 test.exe
+.vscode/
+**/.vscode/
