@@ -27,7 +27,7 @@ int main() {
         user.alias = "Dummy";
     }
 
-    std::cout << "Hello, " << user.name << " " << user.alias << "! Welcome to the C++ project. And your name stores at " << toMA(user.name) << std::endl;
+    std::cout << "Hello, " << user.name << " " << user.alias << "! Welcome to the C++ project. And your name stores at " << toMA(user.name) << "." << std::endl;
     std::cout << "Press Enter to continue...";
     std::cin.get();
     
