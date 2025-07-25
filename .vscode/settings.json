@@ -47,6 +47,7 @@
         "map": "cpp",
         "set": "cpp",
         "iomanip": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "testpad1": "cpp"
     }
 }
