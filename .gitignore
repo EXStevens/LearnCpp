@@ -1,4 +1,27 @@
-CppPrimerPlus/**/*.exe
-test.exe
+# Build artifacts
+*.o
+*.obj
+*.out
+*.a
+*.lib
+*.dll
+*.so
+
+# CMake / Makefile cache files
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Visual Studio Code settings
 .vscode/
 **/.vscode/
+
+# Compiled binaries
+*.exe
+*.out
+
+# Backup / temp files
+*~
+*.swp
+.DS_Store

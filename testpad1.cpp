@@ -18,7 +18,7 @@ int main() {
     cin.getline(buffer, 30);
     
     if(buffer[0] != 'Y' && buffer[0] != 'y') {
-        cout << "Press Enter to exit..." << endl;
+        cout << "Press Enter to exit...";
         cin.get();
         return 0;
     }
