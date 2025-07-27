@@ -59,7 +59,7 @@ long double iCalc(double amount, int percentage, int noYear, InterestType type, 
 
 int main() {
     unique_ptr<Interest> interest = make_unique<Interest>();
-    unique_ptr<InterestType> interestType = make_unique<InterestType>(InterestType::Rate);
+    unique_ptr<InterestType> interestType = make_unique<InterestType>(InterestType::Percentage);
 
     cout << "Welcome to the Fancy Interest Calculator!" << endl;
     cout << "This program will help you calculate the annual interest over certain years on your insurance." << endl;
@@ -86,13 +86,13 @@ int main() {
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
     cout << "Processing... please wait." << flush;
-    this_thread::sleep_for(2s);
+    this_thread::sleep_for(1s);
     cout << "\r                           \r";
     cout << "=========================================================\n" << endl;
 
     for(char c : iBuffer) {
-        if(c != '.') {
-            *interestType = InterestType::Percentage;
+        if(c == '.') {
+            *interestType = InterestType::Rate;
         }
     }
     if(*interestType == InterestType::Rate) {
